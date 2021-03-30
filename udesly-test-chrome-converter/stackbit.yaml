@@ -1,0 +1,27 @@
+stackbitVersion: "~0.3.0"
+ssgName: "custom"
+buildCommand: "npx @11ty/eleventy"
+publishDir: "public"
+staticDir: "static"
+uploadDir: "images"
+pagesDir: "site"
+metadata:
+  title: "udesly test chrome converter "
+  description: "Theme created in Webflow and converted with Udesly"
+models:
+  category:
+    type: "page"
+    label: "Categories"
+    urlPath: "/category/{slug}"
+  team_members:
+    type: "page"
+    label: "Team Members"
+    urlPath: "/team-members/{slug}"
+  tag:
+    type: "page"
+    label: "Tags"
+    urlPath: "/tags/{slug}"
+  posts:
+    type: "page"
+    label: "Posts"
+    urlPath: "/posts/{slug}"
